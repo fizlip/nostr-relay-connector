@@ -1,5 +1,5 @@
 # GRASSR00T
-GRASSR00T is a decentralized messaging platform which allows anyone in the world to connect to a *nostr relay* making it possible for open source investigators a clear view into the social and political life in places where the government censors internet applications like Twitter/Instagram/TikTok. It was inspired by the needs of open source reasearhes discussed in [this](https://www.bellingcat.com/resources/2023/04/18/china-challenges-open-source-osint-social-media/) article
+GRASSR00T is a decentralized messaging platform which allows anyone in the world to connect to a *nostr relay* making it possible for open source investigators to get a clear view into the social and political life in places where the government censors internet applications like Twitter/Instagram/TikTok. It was inspired by the needs of open source reasearhes discussed in [this](https://www.bellingcat.com/resources/2023/04/18/china-challenges-open-source-osint-social-media/) article
 
 I made it as part of the 2023 bellingcat accessability hackathon and had a lot of fun 😀.
 
@@ -7,9 +7,9 @@ I made it as part of the 2023 bellingcat accessability hackathon and had a lot o
 [Filip Zlatoidsky](https://github.com/fizlip)
 ## Tool Description
 
-When conducting reasearch in countries where government censorship and persecution is ... the need for anonymity is obvious. However, the tools that exist today to message with primary sources anonymously are few and often centralized and easy to censor. 
+When conducting reasearch in countries where government censorship and persecution is wide spread the need for anonymity is obvious. However, the 'anonymous' messaging platforms that exist today are few and often centralized and easy to censor. 
 
-**nostr** is a novel communication protocol which you can read more about [here](https://nostr.com/). Basically it's a very simple communication protocol consisting of *clients*, and *relays*. The relays act as servers in the classical client-server architecture the major difference here is that the relays are decentralized meaning anyone in the world can create their own relays. 
+**nostr** is a novel communication protocol (which has existed for less than 1 year) which you can read more about [here](https://nostr.com/). Basically it's a simple protocol aiming at demosratizing social media. The nostr network consists of *clients*, and *relays*. The relays act as servers in the classical client-server architecture. The major difference here is that the clients are indifferent to which relay they connect to meaning that anyone can spin up a relay effectively making their own social media platform. nostr is decentralized, meaning anyone in the world can participate in the network. It is also censorhip resistant, since when one relay is blocked one can simply migrate this to a new domain/IP making it harder (though not impossible) to censor. 
 
 As part of this hackathon I implemented my own relay using some open source libraries, but as this is a tool intended to be used by non-technical people this repo only contains the code used to make the web-app used to connect to said relay and any other relay that exists.
 
