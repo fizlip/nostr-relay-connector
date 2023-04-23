@@ -1,4 +1,7 @@
 # GRASSR00T
+
+TRY IT OUT [HERE](https://nostr-relay-connector-n655.vercel.app/)
+
 GRASSR00T is a decentralized messaging platform which allows anyone in the world to connect to a *nostr relay* making it possible for open source investigators to get a clear view into the social and political life in places where the government censors internet applications like Twitter/Instagram/TikTok. It was inspired by the needs of open source reasearhes discussed in [this](https://www.bellingcat.com/resources/2023/04/18/china-challenges-open-source-osint-social-media/) article
 
 I made it as part of the 2023 bellingcat accessability hackathon and had a lot of fun 😀.
