@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .blob{
+    border-radius: 70% 41% 42% 70% / 60% 43% 45% 52%;
+  },
+  .superRound{
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%; 
+  }
+}
+
+.reactMarkDown {
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body[data-theme="light"] {
+  --color-text-primary: #27201a;
+  --color-text-secondary: #076963;
+  --color-bg-primary: #fff;
+  --color-bg-toggle: #cbf2fe;
+  --color-backlight: #c0b9c4;
+  --color-select: #7317eb; 
+  --color-bg-secondary: #fefefe;
+}
+
+body[data-theme="dark"] {
+  --color-text-primary: #e3e3e3;
+  --color-text-secondary: #ff6b00;
+  --color-bg-primary: #111;
+  --color-bg-secondary: #1c1c1c;
+  --color-bg-toggle: #a9a9a9;
+  --color-backlight: #1f1e1d;
+  --color-select: #36ebba; 
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto; 
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background 0.25s ease-in-out;
+}
+
+p {
+  font-family: Roboto; 
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 4rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 4rem;
+  font-weight: bolder;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.theses {
+  width: 75%;
+}
+
+.theses h1 {
+  font-size: 32px
+}
+
+
+.theses table{
+  margin-top: 20px;
+  align-content: center;
+  justify-content: center
+}
+
+
+

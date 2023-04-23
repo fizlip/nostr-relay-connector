@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: f4-frontend
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: f4-frontend-container
+          image: 236798077409.dkr.ecr.eu-central-1.amazonaws.com/f4-frontend:latest
+          env:
+            - name: STAGE
+              value: "production"
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Always
