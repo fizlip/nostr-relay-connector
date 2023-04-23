@@ -4,30 +4,29 @@ GRASSR00T is a decentralized messaging platform which allows anyone in the world
 I made it as part of the 2023 bellingcat accessability hackathon and had a lot of fun 😀.
 
 ## Team Members
-This section is a list of team members, and possibly links to GitHub/GitLab/LinkedIn/personal blog pages for members.
-
+[Filip Zlatoidsky](https://github.com/fizlip)
 ## Tool Description
 This sections discusses the purpose and motivation for the tool, and how it addresses a tool need you've identified.
 
+When conducting reasearch in countries where government censorship and persecution is ... the need for anonymity is obvious. However, the tools that exist today to message with primary sources anonymously are few and often centralized and easy to censor. 
+
+**nostr** is a novel communication protocol 
+
+As part of this hackathon I implemented my own relay using some open source libraries, but as this is a tool intended to be used by non-technical people this repo only contains the code used to make the web-app used to connect to said relay and any other relay that exists.
+
 ## Installation
-This section includes detailed instructions for installing the tool, including any terminal commands that need to be executed and dependencies that need to be installed. Instructions should be understandable by non-technical users (e.g. someone who knows how to open a terminal and run commands, but isn't necessarily a programmer), for example:
+To interact with a relay installation or technical 'know-how' is needed just go to the [website](https://nostr-relay-connector-n655.vercel.app/)
 
-1. Make sure you have Python version 3.8 or greater installed
-
-2. Download the tool's repository using the command:
-
-        git clone https://github.com/bellingcat/hackathon-submission-template.git
-
-3. Move to the tool's directory and install the tool
-
-        cd hackathon-submission-template
-        pip install .
+To create a public/private self-hosted relay (e.g. if you basically want a self-hosted censorship resistant discord server) you will need a server (a raspberrypi works fine but you could use an EC2 isntance as well). On the server you create a relay which can parse the nostr messages e.g. [strfry](https://github.com/hoytech/strfry) written in c++ or find any other one you like. You then host this relay on you domain and you can connect to it using GRASSR00T. 
 
 ## Usage
-This sections includes detailed instructions for using the tool. If the tool has a command-line interface, include common commands and arguments, and some examples of commands and a description of the expected output. If the tool has a graphical user interface or a browser interface, include screenshots and describe a common workflow.
+
+Currently GRASSR00T has 2 main functionalities:
+
+### Connect to relay
+To connect to a relay you can write the URL of the relay you want, since you are connecting to them using web sockets you need to write the URL in the format wss://your-relay-url.com . You can find some popular relays [here](https://nostr.watch/relays/find)
+### Write message
+To publish a message just write a text in the textarea on the top of the screen.
 
 ## Additional Information
-This section includes any additional information that you want to mention about the tool, including:
-- Potential next steps for the tool (i.e. what you would implement if you had more time)
-- Any limitations of the current implementation of the tool
-- Motivation for design/architecture decisions
+The next steps would be to make app support multimedia content i.e. allowing users to post videos, images and other fileformats. The end goal would be to make this into a decentralized discord/signal type of thing where anyone in the world could easily with a couple of click spin up their own relay that would allow to the create a room online outside of view of the prying eyes of the state.
