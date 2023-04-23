@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-require("dotenv").config();
 const nextConfig = {
   reactStrictMode: true,
   typescript: {
@@ -9,15 +8,5 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
-  experimental: {
-    outputStandalone: true,
-  },
-  images: {
-    domains: ["https://f4-public.s3.eu-central-1.amazonaws.com"]
-  },
-  env:{
-    STAGE: process.env.STAGE,
-  },
 }
-
 module.exports = nextConfig

@@ -17,8 +17,6 @@
     "emoji-picker-react": "^3.5.1",
     "for-editor": "^0.3.5",
     "fs": "^0.0.1-security",
-    "markdown-it": "^12.3.2",
-    "markdown-to-jsx": "^7.1.6",
     "next": "^12.1.6",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",

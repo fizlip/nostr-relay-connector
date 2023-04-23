@@ -1,15 +1,3 @@
-/**
-Author: Filip Zlatoidsky
-
-Post component shows data related to a post including title, body 
-reactions and comments. 
-A functioning post components should let a user react only once
-If it has a title it should link to another page containing an article
-A user should be able to quote it
-A user should be able to share it on other social media platforms
-If it is the users post they should be able to update the post.
-A user should be able to post and view comments on the post.
-*/
 import { useState, useEffect, useContext } from 'react' 
 import Image from 'next/image'
 import { AppContext } from '../../../../context/state'
