@@ -6,11 +6,10 @@ I made it as part of the 2023 bellingcat accessability hackathon and had a lot o
 ## Team Members
 [Filip Zlatoidsky](https://github.com/fizlip)
 ## Tool Description
-This sections discusses the purpose and motivation for the tool, and how it addresses a tool need you've identified.
 
 When conducting reasearch in countries where government censorship and persecution is ... the need for anonymity is obvious. However, the tools that exist today to message with primary sources anonymously are few and often centralized and easy to censor. 
 
-**nostr** is a novel communication protocol 
+**nostr** is a novel communication protocol which you can read more about [here](https://nostr.com/). Basically it's a very simple communication protocol consisting of *clients*, and *relays*. The relays act as servers in the classical client-server architecture the major difference here is that the relays are decentralized meaning anyone in the world can create their own relays. 
 
 As part of this hackathon I implemented my own relay using some open source libraries, but as this is a tool intended to be used by non-technical people this repo only contains the code used to make the web-app used to connect to said relay and any other relay that exists.
 
