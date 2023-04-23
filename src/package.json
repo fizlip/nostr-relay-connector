@@ -18,6 +18,7 @@
     "for-editor": "^0.3.5",
     "fs": "^0.0.1-security",
     "next": "^12.1.6",
+    "nostr-tools": "^1.10.1",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
