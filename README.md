@@ -20,12 +20,14 @@ To create a public/private self-hosted relay (e.g. if you basically want a self-
 
 ## Usage
 
+The intended usage of this web-app is for investigators to be able to connect to relays located in countries with high internet censorhip. An investigator will be given a URL, connect to the relay and then use the website much like Twitter or Discord.
+
 Currently GRASSR00T has 2 main functionalities:
 
 ### Connect to relay
-To connect to a relay you can write the URL of the relay you want, since you are connecting to them using web sockets you need to write the URL in the format wss://your-relay-url.com . You can find some popular relays [here](https://nostr.watch/relays/find)
+To connect to a relay you can write the URL of the relay you want in the right sidebar textarea, since relays are based on websocket we connect to them using a URL in the format wss://your-relay-url.com . You can find some popular relays [here](https://nostr.watch/relays/find)
 ### Write message
 To publish a message just write a text in the textarea on the top of the screen.
 
 ## Additional Information
-The next steps would be to make app support multimedia content i.e. allowing users to post videos, images and other fileformats. The end goal would be to make this into a decentralized discord/signal type of thing where anyone in the world could easily with a couple of click spin up their own relay that would allow to the create a room online outside of view of the prying eyes of the state.
+The next steps would be to make app support multimedia content i.e. allowing users to post videos, images and other fileformats. The end goal would be to make this into a decentralized discord/signal type of thing where anyone in the world could easily with a couple of clicks spin up their own relay that would allow to the create a room online outside of the view of the prying eyes of the state.
