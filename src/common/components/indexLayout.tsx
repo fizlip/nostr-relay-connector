@@ -282,7 +282,7 @@ const RightColumn: React.FC = () => {
               <div className="p-4">
                 <p>Relay created for this hackathon (please DM on discord if not working)</p>
                 <div className="rounded text-md hover:text-red-500 cursor-pointer">
-                  <button onClick={() => connectRelay("ws://mqicontroller.local")} className="p-4 text-lg flex"> <GoVerified className="m-1 text-teal-500" size={15}/> bellingcathackathon-relay</button>
+                  <button onClick={() => connectRelay("wss://bellingcathackathon-relay.com")} className="p-4 text-lg flex"> <GoVerified className="m-1 text-teal-500" size={15}/> bellingcathackathon-relay</button>
                 </div>
                 <p>Popular relay that people use</p>
                 <div className="rounded text-md hover:text-red-500 cursor-pointer">
