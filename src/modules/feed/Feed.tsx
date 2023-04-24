@@ -39,7 +39,7 @@ export default function Feed({posts, nt, update, feedType}){
       let s = relay.sub([
         {
           kinds: [1],
-          since: 0
+          since: 1682325268
         }
       ])
       s.on('event', event => {
@@ -56,8 +56,8 @@ export default function Feed({posts, nt, update, feedType}){
       <button onClick={() => setIsPlaying(p => !p)}>{isPlaying ? <AiFillPauseCircle size={30}/>: <AiFillPlayCircle size={30}/>}</button>
       </div>
       { 
-        msgs.map((post, i) => {
-          return <div><PostComponent creator={"Currentuser"} content={post.content}/></div>
+        msgs.reverse().map((post, i) => {
+          return <div><PostComponent createdAt={post.created_at} creator={"Currentuser"} content={post.content}/></div>
         })
       }
     </div>

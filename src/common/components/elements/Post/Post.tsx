@@ -5,9 +5,10 @@ import { AppContext } from '../../../../context/state'
 type Props = {
   content:string 
   creator:string
+  createdAt:number
 }
 
-const Post: React.FC<Props> = ({creator, content}) => {
+const Post: React.FC<Props> = ({creator, content, createdAt}) => {
 
   const {user, setUser, activeEdit, setActiveEdit} = useContext(AppContext); 
   
@@ -103,6 +104,7 @@ const Post: React.FC<Props> = ({creator, content}) => {
         </div>
         <div className="grid col-start-2 col-span-9">
           <>
+            <p className="text-xs">written: {createdAt}</p>
             <p>{content}</p>
           </>
         </div>

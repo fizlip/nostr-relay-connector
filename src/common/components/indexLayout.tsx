@@ -227,25 +227,24 @@ const RightColumn: React.FC = () => {
       sig: "0",
       kind: 1,
       pubkey: pk,
-      created_at: Math.floor(Date.now() / 1000),
+      created_at: 1682325268,
       tags: [],
-      content: `${sk} has connected to the relay. Say hello!`
+      content: `${pk} has connected to the relay. Say hello!`
     }
     evt.id = getEventHash(evt)
     evt.sig = signEvent(evt, sk)
 
-    let pub = relay.publish(evt)
-    pub.on('ok', () => {
-      console.log(`${relay.url} has accepted our event`)
-    })
-    pub.on('failed', reason => {
-      console.log(`failed to publish to ${relay.url}: ${reason}`)
-    })
-
+    //let pub = relay.publish(evt)
+    //pub.on('ok', () => {
+    //  console.log(`${relay.url} has accepted our event`)
+    //})
+    //pub.on('failed', reason => {
+    //  console.log(`failed to publish to ${relay.url}: ${reason}`)
+    //})
     sub = relay.sub([
       {
         kinds: [1],
-        since: 0
+        since: 1682325268
       }
     ])
 
